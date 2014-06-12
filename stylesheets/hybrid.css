@@ -1,6 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Inconsolata);
-@import url(http://fonts.googleapis.com/css?family=PT+Sans);
-@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 article,
 aside,
 details,
@@ -32,7 +30,10 @@ html {
   -ms-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
+  padding:50px;
+  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#777;
+  font-weight:300;
 }
 a:focus {
   outline: thin dotted;
@@ -41,8 +42,29 @@ a:active,
 a:hover {
   outline: 0;
 }
+h1, h2, h3, h4, h5, h6 {
+   margin:0 0 20px;
+}
+p, ul, ol, table, pre, dl {
+  margin:0 0 20px;
+}
+h1, h2, h3 {
+  line-height:1.1;
+}
+
 h1 {
-  font-size: 2em;
+  font-size:28px;
+}
+
+a {
+  font-weight:400;
+  text-decoration:none;
+}
+
+a small {
+  font-size:11px;
+  margin-top:-0.6em;
+  display:block;
 }
 abbr[title] {
   border-bottom: 1px dotted;
@@ -62,12 +84,18 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, serif;
-  font-size: 1em;
+  font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+  font-size: 12px;
 }
 pre {
   white-space: pre-wrap;
   word-wrap: break-word;
+  padding:8px 15px;
+  background: #f8f8f8;
+  border-radius:5px;
+  border:1px solid #e5e5e5;
+  overflow-x: auto;
+}
 }
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
