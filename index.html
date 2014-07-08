@@ -57,21 +57,23 @@ The 87th Annual Meeting of the Linguistic Society of America. Boston, MA, Januar
 &nbsp;&nbsp; <a href="https://github.com/brochhagen/brochhagen.github.io/releases/download/LSA13/poster-LSA-v2.pdf"> Poster </a>
 <br>
 
-<li class="toggle-text" data-toggle-text="1259">1.2k</li>
-
-<div ID="content" style="display:block;">This is content.</div>
-
-<script type="text/javascript">
-function toggleContent() {
-  // Get the DOM reference
-  var contentId = document.getElementById("content");
-  // Toggle 
-  contentId.style.display == "block" ? contentId.style.display = "none" : 
-contentId.style.display = "block"; 
-}
+<script language="javascript"> 
+function toggle() {
+	var ele = document.getElementById("toggleText");
+	var text = document.getElementById("displayText");
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+		text.innerHTML = "show";
+  	}
+	else {
+		ele.style.display = "block";
+		text.innerHTML = "hide";
+	}
+} 
 </script>
-
-<button onclick="toggleContent()">Toggle</button>
+ 
+<a id="displayText" href="javascript:toggle();">show</a> <== click Here
+<div id="toggleText" style="display: none"><h1>peek-a-boo</h1></div>
 
 <p> &diams; Brochhagen, Thomas: <font color="#990000">Mereology and Natural Language Semantics</font>. M.A. thesis.
 &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/brochhagen/brochhagen.github.io/releases/download/mathesis/brochhagen.thesis.pdf"> Full PDF </a>
