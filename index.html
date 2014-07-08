@@ -67,8 +67,11 @@ The 87th Annual Meeting of the Linguistic Society of America. Boston, MA, Januar
 &nbsp;&nbsp; <a href="https://github.com/brochhagen/brochhagen.github.io/releases/download/LSA13/poster-LSA-v2.pdf"> Poster </a>
 <br>
 
-<a href="#" onclick="toggle_visibility('foo');">Click here to toggle visibility of element #foo</a>
-<div id="foo">This is foo</div>
+$("#more-less-options-button").click(function() {
+     var txt = $("#extra-options").is(':visible') ? 'more options' : 'less options';
+     $("#more-less-options-button").text(txt);
+     $("#extra-options").slideToggle();
+});
 
 
 <p> &diams; Brochhagen, Thomas: <font color="#990000">Mereology and Natural Language Semantics</font>. M.A. thesis.
