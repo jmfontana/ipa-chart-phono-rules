@@ -41,16 +41,16 @@ Thus,
 * 10
 * 12
 * 8
-*3
-*6
-*\-
-*-\-
-*19
-*\#f
-*4
-*16
-*6
-*16
+* 3
+* 6
+* \-\-
+* \-\-
+* 19
+* \#f
+* 4
+* 16
+* 6
+* 16
 
 
 ####Ex. 1.2.
@@ -81,9 +81,9 @@ Thus,
 "a-plus-abs-b" takes two arguments. If the second argument is a positive integer, the two arguments are added. If the second argument is negative, the second arguments is substracted from the first. This has the same effect as taking the absolute value of the 2nd argument, as negative integers are substracted and positive ones added.
 
 ####Ex. 1.5. 
-*Applicative-order: We get stuck in a loop, as *(test 0 (p))*  will not get to the if-statement before evaluating *(p)*, which is *(p)* again ad infinitum.
+* Applicative-order: We get stuck in a loop, as *(test 0 (p))*  will not get to the if-statement before evaluating *(p)*, which is *(p)* again ad infinitum.
 
-*Normal-order: The interpreter will not evaluate *(p)* beforehand and begin by evaluating the if-statement. Since the condition is met *(= x 0)*, the value of this procedure is *0*.
+* Normal-order: The interpreter will not evaluate *(p)* beforehand and begin by evaluating the if-statement. Since the condition is met *(= x 0)*, the value of this procedure is *0*.
 
 
 ####Continue: 1.1.7
