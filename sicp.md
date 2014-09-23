@@ -24,12 +24,13 @@ In order words, scheme follows has an applicative-order evaluation (in compariso
 
 Thus, 
 
+```scheme
 (* (+ 2 (* 4 6)) 
   (+ 3 5 7))
 (* (+ 2 24)
   15)
 (* 26 15)
-
+```
 
 
 ####Ex 1.1.
