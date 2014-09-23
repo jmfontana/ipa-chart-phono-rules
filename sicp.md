@@ -4,17 +4,21 @@
 
 Expressions are formed by a list, enclosed by parentheses, of the operator, followed by its operands. The output is the value of the procedure's application. For example, (+ 1 2) with operator +, operands 1 and 2, and a value of 3.
 
+```scheme
 (define (var-name arg1 arg2) (body)) is shorthand for (define var-name (lambda (arg1 arg2) (body))
+```
 
 as in
 
+```scheme
 (define (square x) (* x x)) being shorthand for (define square (lambda (x) (* x x)))
+```
 
 Similarly, in the case of application
 
+```scheme
 (square 5) has the same values as ((lambda (x) (* x x)) 5)
-
-
+```
 
 Evaluation:
 
@@ -34,9 +38,9 @@ Thus,
 
 
 ####Ex 1.1.
-*10
-*12
-*8
+* 10
+* 12
+* 8
 *3
 *6
 *\-
