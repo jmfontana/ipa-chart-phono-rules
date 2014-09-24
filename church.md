@@ -1,3 +1,9 @@
+###Example of small lexicon
+**Note:** data is fully hard coded and made up. This version simply tests whether the sampled value for N1
+(a relation) is the same as the one for N2 (also a relation). If so, that's the value it will take for this
+evaluation. If not, it will sample one relation at random with a strong bias to *unknown*.
+
+```scheme
 ;;Our toy nominal lexicon (a list of noun labels)
   (define nouns (list 'dog 'cow 'stone 'steel 'farm 'house 'cake 'bread 'knife 'cup))
 
@@ -61,3 +67,4 @@
                                                                                              '(0.05 0.05 0.05 0.05 0.05 0.75)))))) ;samples from all relations with a bias towards a relation not yet learned.
 
 (hist (repeat 50 (lambda () (relation 'steel 'knife))))
+'''
