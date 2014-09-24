@@ -86,7 +86,49 @@ Thus,
 * Normal-order: The interpreter will not evaluate *(p)* beforehand and begin by evaluating the if-statement. Since the condition is met *(= x 0)*, the value of this procedure is *0*.
 
 
-####Continue: 1.1.7
+####Ex. 1.11.
+```scheme
+;f is defined by the rule that f(n) = n if n<3 and f(n) = f(n - 1) + 2f(n - 2) + 3f(n - 3) if n> 3
+(define (f n)
+  (cond ((< n 3) n)
+        ((or (> n 3) (= n 3))
+         (+ (f (- n 1))
+            (* 2 (f (- n 2)))
+            (* 3 (f (- n 3)))))
+        (else 'undefined))) ;for good measure
+```
+
+####Ex. 1.12.
+```scheme
+;get the sum of a row from Pascal's triangle.
+(define (row n)
+  (cond ((= n 1) n)
+        ((> n 1) (+ (row (- n 1))
+                    (row (- n 1))))
+        (else 'undefined)))
+```
+
+####Ex. 1.20. 
+Using pseudo-Scheme the operations for applicative-order (gdc 206 40) encompass 5 steps ignoring the remainder-expansions. Otherwise 10 with 4 calls of remainder.
+
+```scheme
+(gcd 40 (remainder 206 40)) ;I'll start skipping this step
+(gcd 40 6)
+(gcd 6 4)
+(gcd 4 2)
+(gcd 2 0)
+2
+```
+
+For normal-order (gdc 206 40) we get 18 calls in total, which I won't write down as it won't be very enlightening. 
+
+```scheme
+(gcd 40 (remainder 206 40))
+(gcd (remainder 206 40) (remainder 40 (remainder 206 40)))
+...
+2
+```
+
 
 
 
