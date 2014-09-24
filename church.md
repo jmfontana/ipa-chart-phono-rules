@@ -58,7 +58,7 @@ evaluation. If not, it will sample one relation at random with a strong bias to 
 ;Shorthand for a list with two (!) relations for two nouns at the same time:
 (define multi-rel (lambda (noun1 noun2) (list (rel-N1 noun1) (rel-N2 noun2))))
 
-;Chose a relation based on the following heuristic: 
+;Chose a relation based on the following procedure: 
 (define relation (lambda (noun1 noun2) (cond ((equal? (rel-N1 noun1) (rel-N2 noun2)) (rel-N1 noun1)) ;If both relations coincide, go with that.
                                              ;condition: sample from both relation pools until they coincide for N rounds
                                              (else (multinomial (list 'for_purpose 'habitat_of 'made_of 'half-half 'resembles 'unknown)
