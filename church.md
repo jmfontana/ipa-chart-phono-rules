@@ -64,5 +64,5 @@ evaluation. If not, it will sample one relation at random with a strong bias to 
                                              (else (multinomial (list 'for_purpose 'habitat_of 'made_of 'half-half 'resembles 'unknown)
                                                                                              '(0.05 0.05 0.05 0.05 0.05 0.75)))))) ;samples from all relations with a bias towards a relation not yet learned.
 
-(hist (repeat 20 (lambda () (relation 'cup 'house))))
+(hist (repeat 20 (lambda () (relation 'bread 'knife))))
 ```
