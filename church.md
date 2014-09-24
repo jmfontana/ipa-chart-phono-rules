@@ -1,5 +1,5 @@
 ###Example of small lexicon
-**Note:** data is fully hard coded and made up. This version simply compares whether the sampled value for N1
+**Note:** data is fully hard coded and made up. This version simply tests whether the sampled value for N1
 (a relation) is the same as the one for N2 (also a relation). If so, that's the value it will take for this
 evaluation. If not, it will sample one relation at random with a strong towards *unknown*
 
