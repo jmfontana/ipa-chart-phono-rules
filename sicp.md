@@ -149,7 +149,9 @@ For normal-order (gdc 206 40) we get 18 calls in total, which I won't write down
 
 yields: `(smallest-divisor 199) = 199`, `(smallest-divisor 1999) = 1999` and `(smallest-divisor 19999) = 7`
 
+
 #### Ex. 1.23.
+```scheme
 ;improved smallest-divisor test
 (define (smallest-divisor n)
   (find-divisor n 2))
@@ -162,3 +164,4 @@ yields: `(smallest-divisor 199) = 199`, `(smallest-divisor 1999) = 1999` and `(s
 (define square (lambda (x) (* x x)))
 (define next (lambda (x) (cond ((= x 2) 3)
                                (else (+ x 2)))))
+```
