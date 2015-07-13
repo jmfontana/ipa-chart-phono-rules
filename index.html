@@ -53,13 +53,40 @@ function toggle() {
 } 
 </script>
 
+<script language="javascript"> 
+function toggle2() {
+	var ele = document.getElementById("toggleText3");
+	var text = document.getElementById("displayText3");
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+		text.innerHTML = "BibTeX";
+  	}
+	else {
+		ele.style.display = "block";
+		text.innerHTML = "BibTeX";
+	}
+} 
+</script>
+
+
 
 <h2>
 <a name="research" class="anchor"><span class="octicon octicon-link"></span></a>Main output</h2>
 
 <p>
 &diams; Thomas Brochhagen (2015): <font color="#990000">Minimal Requirements for Productive Compositional Signaling</font>. Proceedings of the <a href="http://cognitivesciencesociety.org/conference2015/index.html">37th Annual Conference of the Cognitive Science Society</a>.
-&nbsp;&nbsp;&nbsp;&nbsp;[<a href="https://mindmodeling.org/cogsci2015/papers/0059/index.html">PDF</a> &nbsp; &mdash;]
+&nbsp;&nbsp;&nbsp;&nbsp;[<a href="https://mindmodeling.org/cogsci2015/papers/0059/index.html" target='_blank'>PDF</a> &nbsp; &mdash;
+&nbsp; &nbsp;&nbsp;Poster
+&nbsp; &mdash;
+&nbsp;&nbsp;<a id="displayText" href="javascript:toggle();">BibTeX</a>]
+<div id="toggleText3" style="display: none">  <ul style="list-style: none;"> 
+				<li>@inproceedings{brochhagen2015minimal,</li>
+	<li>author={Brochhagen, Thomas},</li>
+	<li>title={Minimal Requirements for Productive Compositional Signaling},</li>
+	<li>booktitle={Proceedings of the 37th Annual Conference of the Cognitive Science Society},</li>
+	<li>year={2015}}</li>
+	</ul>	
+</div>
 </p>
 
 <p> 
