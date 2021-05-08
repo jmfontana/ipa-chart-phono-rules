@@ -153,11 +153,6 @@ table  {
 	font-weight: bold;
 	color:Black;
 }
-#phonoRuleSymbols .special2  {
-	text-align:left;
-	font-size:8pt;
-	border:0px solid transparent;
-}
 #phonoRuleSymbols .impossible1  {
 	background-color:#E8E8E8;
 	color:Black;
