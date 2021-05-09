@@ -57,9 +57,9 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
         <!-- <IMG SRC="rule.gif"> -->
       <!--<![endif]--> <br>
       <div id="phonoRuleSymbols">
-       <a id="Return"></a> <h2>Regles fonològiques</h2>
-<a href="#DIACRITICS">Diacrítics</a>
-        <table cellspacing="2" cellpadding="2" border="1">
+       <a id="Return"></a> <h2>Navegació: <a href="#DIACRITICS">Diacrítics</a> <a href="#VOCALS">Vocals</a></h2>
+
+        <table cellspacing="2" cellpadding="2" border="1" align="center">
           <colgroup span="2"> </colgroup><colgroup span="2"> </colgroup><colgroup
             span="2"> </colgroup><thead> <tr>
               <th class='titol' colspan="2">Notació de les regles</th>
@@ -68,65 +68,65 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
             </tr>
           </thead> <tbody>
             <tr>
-              <td class='impossible1'>/x/</td>
+              <td class="symbolCell">/x/</td>
 							<th >Fonema</th>
-              <td class='impossible1'> +st</td>
+              <td class='symbolCell'> +st</td>
 							<th >Stop/oclusiu</th>
               <td class='special1'>V</td>
 							<th>Vocal</th>
               <tr>
-              <td class='impossible1'>→</td>
+              <td class='symbolCell'>→</td>
 							<th >Realized as / passa a </th>
-              <td class='impossible1'>+ob</td>
+              <td class='symbolCell'>+ob</td>
 							<th >Obstruent </th>
-              <td class='impossible1'> +frt</td>
+              <td class='symbolCell'> +frt</td>
 							<th>Front/anterior</th>
               <tr>
-              <td class='impossible1'>[x]</td>
+              <td class='symbolCell'>[x]</td>
               <th >Al·lòfon</span></th>
-              <td class='impossible1'>+fr</td>
+              <td class='symbolCell'>+fr</td>
               <th >Fricatiu </th>
-              <td class='impossible1'> +md </td>
+              <td class='symbolCell'> +md </td>
 							<th>Mid/central</th>
             </tr>
             <tr>
-              <td class='impossible1'>/</td>
+              <td class='symbolCell'>/</td>
               <th > In context / en el context de </th>
-              <td class='impossible1'>+af</td>
+              <td class='symbolCell'>+af</td>
               <th >Africat</th>
-              <td class='impossible1'>+bck</td>
+              <td class='symbolCell'>+bck</td>
               <th >Back/posterior</th>
             </tr>
             <tr>
-              <td class='impossible1'>___</td>
+              <td class='symbolCell'>___</td>
               <th > posició al·lòfon</th>
-              <td class='impossible1'>+ap</td>
+              <td class='symbolCell'>+ap</td>
               <th >Aproximant</th>
-              <td class='impossible1'>+cl</td>
+              <td class='symbolCell'>+cl</td>
               <th >Close/tancada</th>
             </tr>
             <tr>
-              <td class='impossible1'>∅</td>
+              <td class='symbolCell'>∅</td>
               <th > Zero / res </th>
-              <td class='impossible1'>+so</td>
+              <td class='symbolCell'>+so</td>
               <th >Sonorant</th>
-              <td class='impossible1'>+clm</td>
+              <td class='symbolCell'>+clm</td>
               <th >Close-mid/Semitancada</th>
             </tr>
             <tr>
-              <td class='impossible1'>#</td>
+              <td class='symbolCell'>#</td>
               <th > Word boundary / principi o final de paraula</th>
-              <td class='impossible1'>+ns</td>
+              <td class='symbolCell'>+ns</td>
               <th >Nasal</th>
-              <td class='impossible1'>+opm</td>
+              <td class='symbolCell'>+opm</td>
               <th >Open-mid/semioberta</th>
             </tr>
             <tr>
               <td class='smaller'>Elsewhere</td>
 							<th >Elsewhere / resta de contextos</th>
-              <td class='impossible1'>+vo</td>
+              <td class='symbolCell'>+vo</td>
 							<th >Voiced </th>
-              <td class='impossible1'>+op</td>
+              <td class='symbolCell'>+op</td>
               <th >Open/oberta</th>
             </tr>
           </tbody>
@@ -443,8 +443,8 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
           </tbody>
         </table>
       </div>
-      <div id="vowels">
-        <h2>Vowels</h2>
+      <div id="vowels"><a id="VOCALS"></a>
+        <h2>Vowels <a href="#Return">Tornar al principi</a></h2>
         <div id="vowelQuadrilateral"> <img id="vowelBackground"
             src="vowelBackground.png" alt="Vowel Quadrilateral">
           <!--<embed src="vowelQuadrilateral.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" />-->
@@ -637,14 +637,28 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
       <div id="diacritics">
                  <a id="DIACRITICS"></a> <h2>Diacritics <a href="#Return">Tornar al principi</a></h2>
-        <p>Diacritics may be placed above a symbol with a descender,
-          e.g. <span class="ipa">ŋ̊</span><br>Clica primer el símbol que vols utilitzar (p.ex. <span class="ipa">ʃ</span>) i a continuació el símbol del diacrític que vols combinar amb el símbol (p.ex. <span class="ipa">ʲ</span>). Això et donarà <span class="ipa">ʃʲ</span>.</p>
+        <p class="wrappertab"></p>
+        <table  height="10" width="100%" cellpadding="1" border="0">
+            <tbody>
+                <tr>
+              <th> Aquest teclat et permet crear símbols complexos, com per exemple <span class="ipa">ŋ̊</span>, mitjançant la combinacío de dos símbols. <br>
+          <span id="linespaceS">Clica primer el símbol que vols utilitzar (p.ex. <span class="ipa">ʃ</span>) i a continuació el símbol del diacrític que vols combinar amb el símbol (p.ex. <span class="ipa">ʲ</span>). Això et donarà <span class="ipa">ʃʲ</span>.</span></th>
+            </tr></tbody></table>
         <table>
           <colgroup span="4"> <col width="0*"> <col> <col width="0*">
             <col width="0*"> </colgroup> <colgroup span="4"> <col
               width="0*"> <col> <col width="0*"> <col width="0*"> </colgroup>
           <colgroup span="4"> <col width="0*"> <col> <col width="0*">
             <col width="0*"> </colgroup> <tbody>
+             
+            <tr>
+              <th colspan="2" class="exemp">Diacrític</th>
+              <th colspan="2" class="exemp">Exemples</th> 
+              <th colspan="2" class="exemp">Diacrític</th>
+              <th colspan="2" class="exemp">Exemples</th>
+              <th colspan="2" class="exemp">Diacrític</th>
+              <th colspan="2" class="exemp">Exemples</th>
+            </tr>
             <tr>
               <td title="U+0325: COMBINING RING BELOW">◌̥</td>
               <th>Voiceless</th>

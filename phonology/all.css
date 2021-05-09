@@ -123,12 +123,10 @@ table  {
 	text-align:center;
 }
 
-#phonoRuleSymbols th.place {
-	width:8%;
-}
-#phonoRuleSymbols th.manner {
-	text-align:left;
-	padding:2px 3px 2px 3px;
+#phonoRuleSymbols th.exemp {
+    font-weight: bold;
+	text-align:center;
+	padding:2px 2px 2px 2px;
 	width:8%; /* for MSIE 6 */
 }
 #phonoRuleSymbols td  {
@@ -136,6 +134,9 @@ table  {
 	text-align:left;
 	padding:0px;
 }
+
+#phonoRuleSymbols .wrappertab {padding: 5px; background: #eaeaea; max-width: 400px; margin: 5px auto; }
+
 #phonoRuleSymbols .titol  {
 	background-color:#9F9F9F;
 	font-size:12pt;
@@ -154,13 +155,18 @@ table  {
 	background-color:#E8E8E8;
 	color:Black;
 }
-#phonoRuleSymbols .impossible1  {
+#phonoRuleSymbols .symbolCell  {
 	background-color:#E8E8E8;
 	color:Black;
 }
-#phonoRuleSymbols span.impossible1  {
-	border-left:solid 1px #777;
-	width:48%;
+#phonoRuleSymbols span.impossiblee  {
+	background-color: aquamarine;
+	color:Black;
+}
+#phonoRuleSymbols span.symbolCell  {
+    background-color:#E8E8E8;
+	color:Black;
+}
 }
 
 /* Pulmonic Consonant Table *******************************/
@@ -234,6 +240,10 @@ table  {
 	border-left:solid 1px #777;
 	width:48%;
 }
+#pulmonicConsonants span.linespaceS  {
+	line-height: 80%;
+}
+
 
 /* Non-Pulmonic Consonant Table ***************************/
 #nonPulmonicConsonants  {
