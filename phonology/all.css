@@ -53,8 +53,9 @@ body {
 
 h1#title {
 	text-align:center;
-	font-size:18pt;
+	font-size:16pt;
 	margin-bottom:2px;
+    color: crimson;
 }
 h1#title #updateDate
 {
@@ -98,6 +99,7 @@ table  {
 }
 #phonoRuleSymbols table{
 	width:75%;
+
 }
 }
 #phonoRuleSymbols table,
