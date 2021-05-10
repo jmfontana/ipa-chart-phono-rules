@@ -56,12 +56,29 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
         some symbols? Apply Doulos SIL font</button>
         <!-- <IMG SRC="rule.gif"> -->
       <!--<![endif]--> <br>
+ 
       <div id="phonoRuleSymbols">
-       <a id="Return"></a> <h2>Navegació: <a href="#DIACRITICS">Diacrítics</a> <a href="#VOCALS">Vocals</a></h2>
-
+       <a id="Return"></a> 
+        <table cellspacing="2" cellpadding="2" border="0"> <colgroup span="2"> </colgroup><colgroup span="2"> </colgroup><colgroup
+            span="2"> </colgroup><thead> <tbody> 
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;</td>
+                  <td>&nbsp;&nbsp;&nbsp;</td>
+                  <td>&nbsp;&nbsp;&nbsp;</td>
+                 <td>&nbsp;&nbsp;</td>
+  
+            <th>
+                Navegació: <a href="#DIACRITICS">Diacrítics</a> :: <a href="#VOCALS">Vocals</a>:: <a href="#AFFRICATES">Africades</a><br><br></th>
+             </tr></thead> </tbody>
+        <tr>
+            <th></th>
+        </tr>
+        </table>
         <table cellspacing="2" cellpadding="2" border="1" align="center">
           <colgroup span="2"> </colgroup><colgroup span="2"> </colgroup><colgroup
-            span="2"> </colgroup><thead> <tr>
+            span="2"> </colgroup><thead> 
+           
+            <tr>
               <th class='titol' colspan="2">Notació de les regles</th>
               <th class='titol'  colspan="2">Trets consonàntics</th>
               <th class='titol'  colspan="2">Trets vocàlics</th>
@@ -559,18 +576,14 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 				</th>
 				<td>k&#x0361;p</td>
 				<td>ts&#x0361;</td>
---> <th rowspan="3" colspan="3" id="tiebar"> <span id="tiebarExample">
-                  <span class="ipa">k͡p</span>&nbsp;&nbsp;&nbsp;<span
-                    class="ipa">t͜s</span><br>
-                  <span class="ipa" title="U+0361: COMBINING DOUBLE
-                    INVERTED BREVE">◌͡◌</span>&nbsp;&nbsp;&nbsp;<span
-                    class="ipa" title="U+035C: COMBINING DOUBLE BREVE
-                    BELOW">◌͜◌</span> </span>
-                <p>Affricates and double articulations can be
-                  represented by two symbols joined by a tie bar if
-                  necessary.
+--> <th rowspan="3" colspan="3" id="tiebar"> <hr>
+                <p class="smallPreTab">Hi ha dues maneres de represtar les <span class="enf">africades</span>  i les dobles articulacions: <br><br><br>
+                    Així&nbsp;&nbsp;➝ &nbsp;<span class="ipa">k͡p</span>&nbsp;&nbsp;<span
+                    class="ipa">t͜s</span> &nbsp;&nbsp;o, més fàcil, com en el teclat de la dreta ➝
                   <!--<em>Note: Unicode does not support tie bars underneath.</em>--></p>
+    
               </th>
+               
             </tr>
             <tr>
               <td title="U+02A2: LATIN LETTER REVERSED GLOTTAL STOP WITH
@@ -580,56 +593,41 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
             <tr>
               <td title="U+02A1: LATIN LETTER GLOTTAL STOP WITH STROKE">ʡ</td>
               <th>Epiglottal plosive</th>
+                
             </tr>
           </tbody>
         </table>
       </div>
-      <div id="suprasegmentals">
-        <h2>Suprasegmentals</h2>
+       <a id="AFFRICATES"></a><div id="affricates">
+        <h2>Africades&nbsp;&nbsp;<a href="#Return">Tornar al principi</a></h2> 
+           <p class="smallPreTab"> En aquest teclat hi pots trobar els símbols per totes les africades <br>que pots necessitar en els exercicis de fonologia.<br></p><p class="smallPreTab">Tan sols cal combinar els simbols dels dos sons que es coarticulen.
+                  <!--<em>Note: Unicode does not support tie bars underneath.</em>--></p>
         <table>
           <colgroup><col width="0*"> <col> <col width="0*"> </colgroup><tbody>
             <tr>
-              <td title="U+02C8: MODIFIER LETTER VERTICAL LINE" class="symbol">ˈ</td>
-              <th colspan="2">Primary stress</th>
+        
+                 <td >ts&nbsp;&nbsp;dz&nbsp;&nbsp;&nbsp;</td>
+              <th colspan="2">alveolar</th>
             </tr>
             <tr>
-              <td title="U+02CC: MODIFIER LETTER LOW VERTICAL LINE" class="symbol">ˌ</td>
-              <th colspan="2">Secondary stress</th>
+                 <td >tʃ&nbsp;&nbsp;&nbsp;dʒ&nbsp;&nbsp;&nbsp;</td>
+              <th colspan="2">palato-alveolar o postalveolar</th>
             </tr>
             <tr>
-              <td colspan="3" id="stressExample">ˌfoʊnəˈtɪʃən</td>
+                 <td >ʈʂ&nbsp;&nbsp;ɖʐ&nbsp;&nbsp;&nbsp;</td>
+              <th colspan="2">retroflex sibilant</th>
             </tr>
             <tr>
-              <td title="U+02D0: MODIFIER LETTER TRIANGULAR COLON" class="symbol">ː</td>
-              <th>Long</th>
-              <td class="example">eː</td>
+                 <td >tɕ&nbsp;&nbsp;dʑ&nbsp;&nbsp;&nbsp;</td>
+              <th colspan="2">alveolo-palatal</th>
             </tr>
             <tr>
-              <td title="U+02D1: MODIFIER LETTER HALF TRIANGULAR COLON" class="symbol">ˑ</td>
-              <th>Half-long</th>
-              <td class="example">eˑ</td>
+              <td >tɬ&nbsp;&nbsp;dɮ</td>
+              <th>alveolar lateral</th>
             </tr>
             <tr>
-              <td title="U+0306: COMBINING BREVE" class="symbol">◌̆</td>
-              <th>Extra short</th>
-              <td class="example">ĕ</td>
-            </tr>
-            <tr>
-              <td title="U+007C: VERTICAL LINE" class="symbol">|</td>
-              <th colspan="2">Minor (foot) group</th>
-            </tr>
-            <tr>
-              <td title="U+2016: DOUBLE VERTICAL LINE" class="symbol">‖</td>
-              <th colspan="2">Major (intonation) group</th>
-            </tr>
-            <tr>
-              <td title="U+002E: FULL STOP" class="symbol">.</td>
-              <th>Syllable break</th>
-              <td class="example">ɹi.ækt</td>
-            </tr>
-            <tr>
-              <td title="U+203F: UNDERTIE" class="symbol">‿</td>
-              <th colspan="2">Linking (absence of a break)</th>
+              <td >cç&nbsp;&nbsp;ɟʝ</td>
+              <th>palatal</th>
             </tr>
           </tbody>
         </table>
@@ -638,8 +636,8 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
                  <a id="DIACRITICS"></a> <h2>Diacritics <a href="#Return">Tornar al principi</a></h2>
        
-             <p class="small">  Aquest teclat et permet crear símbols complexos, com per exemple <span class="ipa">ŋ̊</span>, mitjançant la combinacío de dos símbols. <br>
-         Clica primer el símbol que vols utilitzar (p.ex. <span class="ipa">ʃ</span>) i a continuació el símbol del diacrític que vols combinar amb el símbol (p.ex. <span class="ipa">ʲ</span>). Això et donarà <span class="ipa">ʃʲ</span>.</p><br>
+             <p class="smallPreTab"> Aquest teclat et permet crear símbols complexos, com per exemple <span class="ipaSmaller">ŋ̊,</span> mitjançant la combinacío de dos símbols.</p> <p class="smallPreTab">
+         Clica primer el símbol que vols utilitzar (p.ex. <span class="ipaSmaller">ʃ</span>) i a continuació el símbol del diacrític que vols combinar amb <br>el símbol (p.ex. <span class="ipaSmaller">ʲ</span>).Això et donarà <span class="ipaSmaller">ʃʲ</span>.</p><br>
               
               <table>
           <colgroup span="4"> <col width="0*"> <col> <col width="0*">
@@ -755,6 +753,10 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
               <td title="U+0308: COMBINING DIAERESIS">◌̈</td>
               <th>Centralized</th>
               <td class="leftExample">ë</td>
+              <td class="rightExample"><br></td>
+              <td title="U+0294: MODIFIER LETTER SMALL GLOTTAL STOP">ˀ</td>
+              <th>Glottalized</th>
+              <td class="leftExample">kˀ</td>
               <td class="rightExample"><br></td>
               <td title="U+0334: COMBINING TILDE OVERLAY">◌̴<!--~--></td>
               <th colspan="2">Velarized or pharyngealized</th>

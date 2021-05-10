@@ -83,6 +83,14 @@ td  {
 span.ipa  {
 	font-size:20pt;
 }
+span.ipaSmaller  {
+	font-size:14pt;
+}
+
+span.enf {
+    font-size:12pt;
+    font-weight:bold;
+}
 
 table  {
 	border-collapse:collapse;
@@ -135,7 +143,6 @@ table  {
 	padding:0px;
 }
 
-#phonoRuleSymbols .wrappertab {padding: 5px; background: #eaeaea; max-width: 400px; margin: 5px auto; }
 
 #phonoRuleSymbols .titol  {
 	background-color:#9F9F9F;
@@ -239,9 +246,6 @@ table  {
 #pulmonicConsonants span.impossible  {
 	border-left:solid 1px #777;
 	width:48%;
-}
-#pulmonicConsonants span.linespaceS  {
-	line-height: 80%;
 }
 
 
@@ -390,6 +394,32 @@ th#tiebar span#tiebarExample { /* TO CHANGE */
 	margin-top:.75em;
 	margin-left:1.5ex;
 }
+/* affricates ****************************/
+div#affricates  {
+	float:right;
+	margin-bottom:2em;
+}
+
+div#affricates th  {
+	text-align:left;
+	font-weight:normal;
+	white-space:nowrap;
+	font-size:10pt;
+}
+div#affricates td {
+	white-space:pre;
+	font-size:20pt;
+	padding:0px .5ex 0px .5ex;
+}
+div#affricates td.symbol {
+	text-align:center;
+}
+div#affricates td.example {
+	text-align:left;
+}
+div#affricates td#stressExample  {
+	text-align:right;
+}
 
 /* Suprasegmentals ****************************/
 div#suprasegmentals  {
@@ -469,6 +499,21 @@ div#diacritics td.wideCell  {
 
 div#diacritics th.wideCell  {
 	padding:2px 0px 2px .5ex;
+}
+
+div#diacritics .wrappertab {padding: 5px; background-color: aqua; max-width: 400px; line-height: 80%; margin: 5px auto; }
+
+div#diacritics span.linespaceS  {
+	line-height: 90%;
+    background-color: aqua;
+}
+
+p.small {
+  line-height: 0.85;
+}
+
+p.smallPreTab {
+  font-size:10pt;
 }
 
 /*
