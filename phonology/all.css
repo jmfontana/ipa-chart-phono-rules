@@ -92,6 +92,14 @@ span.enf {
     font-weight:bold;
 }
 
+.symbolCell  {
+	background-color:#E8E8E8;
+	color:Black;
+}
+
+
+
+
 table  {
 	border-collapse:collapse;
 	padding:0px;
@@ -144,25 +152,24 @@ table  {
 }
 
 
-#phonoRuleSymbols .titol  {
+#phonoRuleSymbols.titol  {
 	background-color:#9F9F9F;
 	font-size:12pt;
 	font-weight: bold;
 	color:Black;
 }
-#phonoRuleSymbols .smaller  {
+#phonoRuleSymbols.smaller  {
 	text-align:center;
 	font-size:10pt;
-	background-color:#E8E8E8;
 	font-weight: bold;
 	color:Black;
 }
-#phonoRuleSymbols .special1  {
+#phonoRuleSymbols.special1  {
 	text-align:center;
 	background-color:#E8E8E8;
 	color:Black;
 }
-#phonoRuleSymbols .symbolCell  {
+/*#phonoRuleSymbols.symbolCell  {
 	background-color:#E8E8E8;
 	color:Black;
 }
@@ -173,7 +180,7 @@ table  {
 #phonoRuleSymbols span.symbolCell  {
     background-color:#E8E8E8;
 	color:Black;
-}
+}*/
 }
 
 /* Pulmonic Consonant Table *******************************/
