@@ -264,7 +264,7 @@ function init(){
 	addHandlers(ipawin.document.getElementById('suprasegmentals').getElementsByTagName('td'));
 
 	//diacritics
-	addHandlers(ipawin.document.getElementById('diacritics').getElementsByTagName('td'), 'diacritics');
+	addHandlers(ipawin.document.getElementById('diacritics').getElementsByTagName('td'));
 
 	//tonesAndWordAccents
 	addHandlers(ipawin.document.getElementById('tonesAndWordAccents').getElementsByTagName('td'), 'tonesAndWordAccents');
