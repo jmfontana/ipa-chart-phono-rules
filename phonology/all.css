@@ -151,22 +151,18 @@ table  {
 	padding:0px;
 }
 
-
-#phonoRuleSymbols.titol  {
-	background-color:#9F9F9F;
-	font-size:12pt;
-	font-weight: bold;
-	color:Black;
+#phonoRuleSymbols th.titol  {
+    font-size:10pt;
+    color:Black;
 	text-align:center;
 }
-
-#phonoRuleSymbols.smaller  {
+#phonoRuleSymbols td.smaller  {
 	text-align:center;
 	font-size:10pt;
 	font-weight: bold;
 	color:Black;
 }
-#phonoRuleSymbols.special1  {
+#phonoRuleSymbols td.special1  {
 	text-align:center;
 	background-color:#E8E8E8;
 	color:Black;
