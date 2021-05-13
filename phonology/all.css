@@ -157,7 +157,9 @@ table  {
 	font-size:12pt;
 	font-weight: bold;
 	color:Black;
+	text-align:center;
 }
+
 #phonoRuleSymbols.smaller  {
 	text-align:center;
 	font-size:10pt;
