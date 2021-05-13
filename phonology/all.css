@@ -156,6 +156,19 @@ table  {
     color:Black;
 	text-align:center;
 }
+
+#phonoRuleSymbols table.nav  {
+    font-weight: bold;
+    font-size:14pt;
+    color:Black;
+}
+
+#phonoRuleSymbols th.nav  {
+    font-weight: bold;
+    font-size:14pt;
+    color:Black;
+    text-align:center;
+}
 #phonoRuleSymbols td.smaller  {
 	text-align:center;
 	font-size:10pt;
