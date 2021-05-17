@@ -134,6 +134,7 @@ table  {
 }
 */
 /* replacement for caption */
+/* phonoRuleSymbols Table *******************************/
 #phonoRuleSymbols p {
 	margin-top:.25em;
 	text-align:center;
@@ -179,6 +180,9 @@ table  {
 	text-align:center;
 	background-color:#E8E8E8;
 	color:Black;
+}
+#phonoRuleSymbols table{
+	width:100%;
 }
 /*#phonoRuleSymbols.symbolCell  {
 	background-color:#E8E8E8;
