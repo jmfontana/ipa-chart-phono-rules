@@ -20,6 +20,7 @@
     ul.ul1 {list-style-type: disc}
     .wrapper {padding: 5px; background: #eaeaea; max-width: 700px; font: 16.0px 'Times New Roman'; margin: 5px auto; }
     .wrapperTabl {padding: 2px; background: #eaeaea; max-width: 700px; }
+    .wrapperTablB {padding: 2px; background: #eaeaea; max-width: 700px; }
   </style>
   </head>
   <body>
@@ -31,9 +32,9 @@
         símbols que necessitaràs per expressar les regles fonològiques:</li>
     </ul>
    
-           <p class="p3"><span class="Apple-tab-span">	</span><a
+  <!--         <p class="p3"><span class="Apple-tab-span">	</span><a
 href="https://brochhagen.github.io/phonology/keyboard/" target="_blank"><span
-          class="s2">https://brochhagen.github.io/phonology/keyboard</span></a></p><br>
+          class="s2">https://brochhagen.github.io/phonology/keyboard</span></a></p><br>-->
     <p class="p3"><span class="Apple-tab-span">	</span><a
 href="https://jmfontana.github.io/ipa-chart-phono-rules/phonology/keyboard/index.html" target="_blank"><span
           class="s2">https://jmfontana.github.io/ipa-chart-phono-rules/phonology/keyboard</span></a></p><br>
@@ -52,8 +53,28 @@ href="https://jmfontana.github.io/ipa-chart-phono-rules/phonology/keyboard/index
            <ul class="ul1" >
       <li class="li3" maxlength="10">Els trets vocàlics i consonàntics estan marcats en positiu ('+') per defecte. Si vols indicar que la classe natural està caracteritzada per l'absència d'un tret determinat, clica el tret desitjat i substitueix el signe '+' pel signe '-'.<br><br>
        <img src="trets.gif" style="width:450px;height:350px;">
-      </li>    </ul>   </div>
+      </li>    </ul> 
+        <ul class="ul1" >
+            <li class="li3" maxlength="10">Si has de descriure una classe natural per la qual necessites emprar més d'un símbol (p. ex. la classe natural dels sons <strong>oclusius sonors</strong>), expresa-ho de manera simplificada. En l'exemple següent els fonemes i sons amb els trets +oclusiu +sonor (i.e. la classe natural dels sons <strong>oclusius sonors</strong>) es representen segons aquesta convenció.<br> </ul>
+                      <div class="wrapperTablB">
+                <table height="50" width="75%" STYLE="margin:0px 55px" cellspacing="1" cellpadding="1"
+      border="0" align="center">
+      <tbody>
+        <tr valign="top">
+          <td valign="top"><em><strong>Així:</strong></em></td>
+          <td valign="top">/+st,+vo/→[+st,-vo]/[-vo]___[-vo]<span class="s3">&nbsp;&nbsp;✔︎</span><br><br>         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→[+st,+vo]/elsewhere<span class="s3">&nbsp;&nbsp;✔︎</span><br><br></td>
+        </tr>
+        <tr>
+          <td valign="top"><em><strong>Millor que així:</strong></em></td>
+             <td valign="top">&nbsp;/+st//+vo/→[-vo]/[-vo]___[-vo]<span class="s4">&nbsp;&nbsp; ✘</span>
+                 <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→[+st][+vo]/elsewhere<span class="s4">&nbsp;&nbsp; ✘</span><br><br><br></td>
+            </tr>
+      </tbody>
+    </table>
+      
+      </div></div>
       <br>
+  
                    <div class="wrapper"> 
                <ul class="ul1" >
       <li class="li3">Si empres qualsevol dels trets vocàlics, no empris
@@ -61,13 +82,13 @@ href="https://jmfontana.github.io/ipa-chart-phono-rules/phonology/keyboard/index
       </li>
     </ul>
        <div class="wrapperTabl">
-       <table height="50" width="50%" STYLE="margin:0px 55px" cellspacing="1" cellpadding="1"
+       <table height="50" width="75%" STYLE="margin:0px 55px" cellspacing="1" cellpadding="1"
       border="0" align="center">
       <tbody>
         <tr valign="top">
           <td valign="top"><em><strong>Així:</strong></em></td>
           <td valign="top">&nbsp;&nbsp;&nbsp;/k/→[t]/___[+frt]<span class="s3"> ✔︎</span><br><br>
-           &nbsp;&nbsp;/+ob//+vo/→[+ob][-vo]/V___V<span class="s3"> ✔︎</span><br><br></td>
+           &nbsp;&nbsp;/+ob,+vo/→[+ob,-vo]/V___V<span class="s3"> ✔︎</span><br><br></td>
         </tr>
         <tr>
           <td valign="top"><em><strong>Així no!:</strong></em></td>
