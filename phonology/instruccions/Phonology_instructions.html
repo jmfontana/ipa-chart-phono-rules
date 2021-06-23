@@ -41,6 +41,49 @@ href="https://jmfontana.github.io/ipa-chart-phono-rules/phonology/keyboard/index
     
     </div><br>
      <div class="wrapper">
+         
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".form-control.mb-1").attr('size', 18);
+    });
+</script>
+
+
+<p dir="ltr" style="text-align: left;">
+</p>
+<p Escriu les regles de la manera que s'indica a continuació.</p>
+<p dir="ltr">Per representar la regla que descriu la distribució dels al·lòfons de <strong>/b/</strong> a l'espanyol o al català (<strong>[b]</strong>, [<strong>β]</strong> i <strong>[p]</strong>) has d'emplenar les caselles disponibles de la següent
+    manera (no deixis cap espai en blanc!): </p>
+<table width="40%" border="1" bgcolor="#FFFFFF">
+    <tbody>
+        <tr>
+            <td>/b/→[β]/V___V<br></td>
+        </tr>
+        <tr>
+
+            <td>→[p]/___[-vo]</td>
+
+        </tr>
+        <tr>
+            <td>→[b]/elsewhere<br></td>
+
+        </tr>
+        <tr>
+            <td>-<br></td>
+
+        </tr>
+        <tr>
+            <td>-<br></td>
+
+        </tr>
+    </tbody>
+</table>
+<p>Això representarà la regla següent que ens indica que el fonema /b/ esdevé [β] quan es troba entre dues vocals; [p] quan va seguit d'una consonant sorda i [b] en la resta de contextos.: <br></p>
+<p>/b/→[β]/V___V<br>&nbsp;&nbsp;&nbsp; →[p]/___[-vo]<br>&nbsp;&nbsp;&nbsp; →[b]/elsewhere</p>Les caselles que no necessitis per formular la regla i que haurien de quedar buides han d'emplenar-se amb un guió ('-'). Recorda també la convenció que s'aplica
+en les descripcions dels sons en anglès. Si has de descriure classes naturals en termes de trets, les convencions que s'apliquen en les regles en les regles de fonologia són les mateixes: Sonoritat &gt; punt d'articulació &gt; mode d'articulació.<br>
+<p><br><strong>Exemples: </strong>[+voiced][+bilabial][+stop], [+bilabial][+fricative], [-voiced][+aproximant], [+alveolar][+obstruent]<br></p>
+<p></p>
     <strong>IMPORTANT:</strong><br>
          No deixis cap espai entre els símbols que utilitzis per escriure les regles. La manera més còmoda i ràpida de crear la regla és clicar en tots els símbols que necessitis per cada part (línia) de la regla en el teclat de de l'enllaç anterior un al darrere de l'altre sense deixar cap espai. Exemple:<br><br>
          /b/→[β]/V___V
@@ -52,7 +95,7 @@ href="https://jmfontana.github.io/ipa-chart-phono-rules/phonology/keyboard/index
    
        <div class="wrapper">
     <ul class="ul1">
-      <li class="li3" maxlength="10">Pots estalviar temps introduint fonemes o al·lòfons a les regles si utilitzes els símbols "prefabricats" /x/ i [x]. Clica el símbol i substitueix la 'x' pel símbol o tret necessari. </li><br>
+      <li class="li3" maxlength="10">Pots estalviar temps introduint fonemes o al·lòfons a les regles si utilitzes els símbols "prefabricats" /x/ i [x]. Quan ja tinguis /x/ o [x] copiat, només has de clicar el símbol de la taula que representarà el fonema o l'al·lòfon i aquest passarà a substituir la 'x' que hi ha dins el parèntesi. </li><br>
             <img src="rule.gif" style="width:450px;height:350px;">
     </ul>
   
@@ -71,12 +114,12 @@ href="https://jmfontana.github.io/ipa-chart-phono-rules/phonology/keyboard/index
       <tbody>
         <tr valign="top">
           <td valign="top"><em><strong>Així:</strong></em></td>
-          <td valign="top">/+st,+vo/→[+st,-vo]/[-vo]___[-vo]<span class="s3">&nbsp;&nbsp;✔︎</span><br><br>         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→[+st,+vo]/elsewhere<span class="s3">&nbsp;&nbsp;✔︎</span><br><br></td>
+          <td valign="top">/+vo,+st/→[-vo,+st/]/[-vo]___[-vo]<span class="s3">&nbsp;&nbsp;✔︎</span><br><br>         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→[+vo,+st]/elsewhere<span class="s3">&nbsp;&nbsp;✔︎</span><br><br></td>
         </tr>
         <tr>
           <td valign="top"><em><strong>Millor que així:</strong></em></td>
-             <td valign="top">&nbsp;/+st//+vo/→[-vo]/[-vo]___[-vo]<span class="s4">&nbsp;&nbsp; ✘</span>
-                 <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→[+st][+vo]/elsewhere<span class="s4">&nbsp;&nbsp; ✘</span><br><br><br></td>
+             <td valign="top">&nbsp;/+vo,+st/→[-vo]/[-vo]___[-vo]<span class="s4">&nbsp;&nbsp; ✘</span>
+                 <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→[+vo,+st]/elsewhere<span class="s4">&nbsp;&nbsp; ✘</span><br><br><br></td>
             </tr>
       </tbody>
     </table>
@@ -96,8 +139,8 @@ href="https://jmfontana.github.io/ipa-chart-phono-rules/phonology/keyboard/index
       <tbody>
         <tr valign="top">
           <td valign="top"><em><strong>Així:</strong></em></td>
-          <td valign="top">&nbsp;&nbsp;&nbsp;/k/→[t]/___[+frt]<span class="s3"> ✔︎</span><br><br>
-           &nbsp;&nbsp;/+ob,+vo/→[+ob,-vo]/V___V<span class="s3"> ✔︎</span><br><br></td>
+          <td valign="top">&nbsp;&nbsp;&nbsp;/k/→[t]/___[+frt]<span class="s3"> ✔︎</span> <br> <br>Amb això ja estàs indicant: "abans de vocals anteriors".<br><br>
+           &nbsp;&nbsp;/+vo,+ob/→[-vo,+ob]/V___V<span class="s3"> ✔︎</span><br> <br>Aquí simplement estàs indicant: "entre vocals".<br><br></td>
         </tr>
         <tr>
           <td valign="top"><em><strong>Així no!:</strong></em></td>
