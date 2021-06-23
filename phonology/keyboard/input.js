@@ -116,7 +116,7 @@ function engageKey(){
 				entities += ';';
 			}
 		}
-		pressedKey = entities;
+		pressedKey = 'entities';
 	}
 	
 	timer = self.setTimeout("timer = self.setInterval('writekey()', repeatRate)", repeatDelay); //\"" + (pressedKey == '"' ? '\\\\"' : (pressedKey.match(/[\n']/) ? '\\' + pressedKey : pressedKey)) + "\"
