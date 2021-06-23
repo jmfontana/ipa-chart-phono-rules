@@ -97,6 +97,10 @@ span.enf {
 	color:Black;
 }
 
+.symbolCell:hover  {
+	background-color:#d6c6c6;
+	color:Black;
+}
 
 
 
