@@ -24,6 +24,7 @@ var repeatDelay = 200;
 var repeatRate = 25;
 var timer = null;
 var pressedKey = '';
+var prevPressedKey = '';
 var pressedNode = null;
 var textarea_selection;
 var symbolsUsedBox;
@@ -328,6 +329,10 @@ function writekey(){
 			textarea.selectionStart = startPos+pressedKey.length - 2;
 			textarea.selectionEnd = startPos+pressedKey.length - 1;
 		}
+		if (prevPressedKey == '/x/' || prevPressedKey == '[x]') {
+			textarea.selectionStart = startPos+pressedKey.length + 1;
+			textarea.selectionEnd = startPos+pressedKey.length + 1;
+		}
 	}
 	//MSIE
 	else if(document.selection)
@@ -337,6 +342,7 @@ function writekey(){
 		
 	if(textarea_selection)
 		textarea_selection.select();
+	prevPressedKey=pressedKey;
 }
 
 function showSymbolsUsed(){
