@@ -313,6 +313,7 @@ function saveSelection(){
 }
 
 function writekey(){
+	consloe.log(pressedKey);
 	textarea.focus();
 	if(textarea_selection)
 		textarea_selection.select();
