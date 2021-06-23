@@ -313,7 +313,6 @@ function saveSelection(){
 }
 
 function writekey(){
-	consloe.log(pressedKey);
 	textarea.focus();
 	if(textarea_selection)
 		textarea_selection.select();
@@ -325,6 +324,10 @@ function writekey(){
 		textarea.value = textarea.value.substring(0, startPos) + pressedKey + textarea.value.substring(endPos, textarea.value.length);
 		textarea.selectionStart = startPos+pressedKey.length;
 		textarea.selectionEnd = startPos+pressedKey.length;
+		if (pressedKey == '/x/' || pressedKey == '[x]') {
+			textarea.selectionStart = startPos+pressedKey.length - 1;
+			textarea.selectionEnd = startPos+pressedKey.length;
+		}
 	}
 	//MSIE
 	else if(document.selection)
