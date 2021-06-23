@@ -325,8 +325,8 @@ function writekey(){
 		textarea.selectionStart = startPos+pressedKey.length;
 		textarea.selectionEnd = startPos+pressedKey.length;
 		if (pressedKey == '/x/' || pressedKey == '[x]') {
-			textarea.selectionStart = startPos+pressedKey.length - 1;
-			textarea.selectionEnd = startPos+pressedKey.length;
+			textarea.selectionStart = startPos+pressedKey.length - 2;
+			textarea.selectionEnd = startPos+pressedKey.length - 1;
 		}
 	}
 	//MSIE
