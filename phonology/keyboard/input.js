@@ -313,7 +313,6 @@ function saveSelection(){
 }
 
 function writekey(){
-	console.log('test');
 	textarea.focus();
 	if(textarea_selection)
 		textarea_selection.select();
