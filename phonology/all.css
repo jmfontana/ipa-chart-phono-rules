@@ -29,7 +29,7 @@ a#keyboardLink {
 	text-decoration:none;
 	padding:3px;
 	border:solid 1px black;
-	background-color:White;
+
 	color:Black;
 	z-index:200;
 }
@@ -41,6 +41,7 @@ a#keyboardLink:hover {
 	color:Black;
 	background-color:Yellow;
 }
+
 
 #chartIntro {
 	display:none;
@@ -100,6 +101,14 @@ span.enf {
 .symbolCell:hover  {
 	background-color:#d6c6c6;
 	color:Black;
+}
+
+span#symbolCell a 
+{
+    background-color:#7d76b2;
+	padding-left:1ex;
+	padding-right:1ex;
+	text-decoration:none;
 }
 
 
