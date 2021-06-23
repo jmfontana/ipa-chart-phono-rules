@@ -116,8 +116,7 @@ function engageKey(){
 				entities += ';';
 			}
 		}
-		pressedKey = 'entities';
-		console.log(pressedKey);
+		pressedKey = entities;
 	}
 	
 	timer = self.setTimeout("timer = self.setInterval('writekey()', repeatRate)", repeatDelay); //\"" + (pressedKey == '"' ? '\\\\"' : (pressedKey.match(/[\n']/) ? '\\' + pressedKey : pressedKey)) + "\"
@@ -314,7 +313,7 @@ function saveSelection(){
 }
 
 function writekey(){
-	console.log(pressedKey);
+	console.log('test');
 	textarea.focus();
 	if(textarea_selection)
 		textarea_selection.select();
