@@ -117,6 +117,7 @@ function engageKey(){
 			}
 		}
 		pressedKey = 'entities';
+		console.log(pressedKey);
 	}
 	
 	timer = self.setTimeout("timer = self.setInterval('writekey()', repeatRate)", repeatDelay); //\"" + (pressedKey == '"' ? '\\\\"' : (pressedKey.match(/[\n']/) ? '\\' + pressedKey : pressedKey)) + "\"
@@ -313,6 +314,7 @@ function saveSelection(){
 }
 
 function writekey(){
+	console.log(pressedKey);
 	textarea.focus();
 	if(textarea_selection)
 		textarea_selection.select();
@@ -322,8 +324,8 @@ function writekey(){
 		var startPos = textarea.selectionStart;
 		var endPos = textarea.selectionEnd;
 		textarea.value = textarea.value.substring(0, startPos) + pressedKey + textarea.value.substring(endPos, textarea.value.length);
-		textarea.selectionStart = startPos+pressedKey.lengthb - 1;
-		textarea.selectionEnd = startPos+pressedKey.length - 1;
+		textarea.selectionStart = startPos+pressedKey.length;
+		textarea.selectionEnd = startPos+pressedKey.length;
 	}
 	//MSIE
 	else if(document.selection)
