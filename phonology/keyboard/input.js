@@ -322,8 +322,8 @@ function writekey(){
 		var startPos = textarea.selectionStart;
 		var endPos = textarea.selectionEnd;
 		textarea.value = textarea.value.substring(0, startPos) + pressedKey + textarea.value.substring(endPos, textarea.value.length);
-		textarea.selectionStart = startPos+pressedKey.length;
-		textarea.selectionEnd = startPos+pressedKey.length;
+		textarea.selectionStart = startPos+pressedKey.lengthb - 1;
+		textarea.selectionEnd = startPos+pressedKey.length - 1;
 	}
 	//MSIE
 	else if(document.selection)
