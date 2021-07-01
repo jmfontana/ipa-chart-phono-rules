@@ -52,6 +52,35 @@ body {
 }
 
 
+.blink_me {
+  animation: blinker 1s linear infinite;
+  font-size:16pt;
+  margin-bottom:2px;
+  color:darkred;
+  vertical-align:middle;
+  padding:2px;
+  text-align:right;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+.gen_title_anim {
+
+  font-size:14pt;
+  margin-bottom:2px;
+
+
+}
+
+
+
+
+
 h1#title {
 	text-align:center;
 	font-size:16pt;
